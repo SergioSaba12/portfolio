@@ -10,7 +10,7 @@
 
   <header>
     <h1>Sergio Sabater Ruiz</h1>
-    <p>Estudiante de Ingeniería Telemática | Apasionado por la tecnología, el emprendimiento y la innovación</p>
+    <p class="subtitle">Estudiante de Ingeniería Telemática | Emprendedor y Apasionado por la tecnología</p>
   </header>
 
   <nav>
@@ -21,81 +21,58 @@
     <a href="#contacto">Contacto</a>
   </nav>
 
-  <section id="sobre-mi">
+  <section id="sobre-mi" class="section">
     <h2>Sobre mí</h2>
-    <p>Soy estudiante de cuarto curso de Ingeniería Telemática en la Universitat de València. Me apasiona la tecnología, la Fórmula 1, la música y el emprendimiento.</p>
-    <p>He ganado el <strong>Premio Gennera 2025</strong> con un proyecto innovador, participé en el concurso <strong>Idees MOTIVEM</strong> quedando tercero en el MOTIVEM Fest, y tengo certificaciones en Python, Machine Learning y Testing.</p>
+    <p>Soy estudiante de Ingeniería Telemática en la Universitat de València. Me apasionan la tecnología, la innovación y el emprendimiento.</p>
   </section>
 
-  <section id="proyectos">
+  <section id="proyectos" class="section">
     <h2>Proyectos</h2>
-
     <div class="project">
       <h3>Premio Gennera 2025</h3>
-      <p>Proyecto de innovación premiado en la Universidad de Valencia, abordando retos sociales mediante soluciones tecnológicas.</p>
+      <p>Proyecto galardonado que se centra en soluciones innovadoras para retos sociales.</p>
     </div>
-
     <div class="project">
       <h3>Idees MOTIVEM</h3>
-      <p>Proyecto universitario de emprendimiento que logró el tercer puesto en el certamen MOTIVEM Fest. Aplicación de conocimientos de negocio y creatividad tecnológica.</p>
+      <p>Proyecto premiado en el certamen MOTIVEM Fest, destacando en el emprendimiento tecnológico.</p>
     </div>
-
   </section>
 
-  <section id="habilidades">
+  <section id="habilidades" class="section">
     <h2>Habilidades</h2>
     <div class="skills">
       <span class="skill">C++</span>
-      <span class="skill">C</span>
       <span class="skill">Python</span>
       <span class="skill">Java</span>
       <span class="skill">HTML</span>
       <span class="skill">CSS</span>
       <span class="skill">JavaScript</span>
-      <span class="skill">Testing</span>
       <span class="skill">Machine Learning</span>
+      <span class="skill">Testing</span>
     </div>
   </section>
 
-  <!-- Timeline de Logros -->
-  <section id="logros">
+  <section id="logros" class="section">
     <h2>Mis Logros</h2>
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-date">2025</div>
         <div class="timeline-content">
           <h3>Premio Gennera 2025</h3>
-          <p>He ganado el Premio Gennera 2025 con un proyecto innovador centrado en soluciones tecnológicas para la sociedad.</p>
+          <p>He ganado el Premio Gennera con un proyecto centrado en la innovación tecnológica.</p>
         </div>
       </div>
-      
       <div class="timeline-item">
         <div class="timeline-date">2024</div>
         <div class="timeline-content">
           <h3>Certificación en Python</h3>
-          <p>He completado un curso avanzado en Python ofrecido por el Banco Santander, ampliando mis habilidades en este lenguaje.</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-date">2023</div>
-        <div class="timeline-content">
-          <h3>3er lugar en el Motivem Fest</h3>
-          <p>Obtuve el tercer puesto en el concurso Idees MOTIVEM, destacando en el evento de emprendimiento de la Universitat de València.</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-date">2022</div>
-        <div class="timeline-content">
-          <h3>Certificación en Testing + Integración Continua</h3>
-          <p>Certifiqué un curso especializado en Testing y Integración Continua a través de Capgemini, ampliando mis conocimientos en desarrollo y control de calidad.</p>
+          <p>Completé un curso avanzado en Python ofrecido por el Banco Santander.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contacto">
+  <section id="contacto" class="section">
     <h2>Contacto</h2>
     <p>Email: <a href="mailto:sergio.telematico@gmail.com">sergio.telematico@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/sergio-sabater-ruiz" target="_blank">sergio-sabater-ruiz</a></p>
@@ -105,26 +82,6 @@
   <footer>
     <p>&copy; 2025 Sergio Sabater Ruiz · Portfolio personal</p>
   </footer>
-
-  <script>
-    // Mostrar los elementos del timeline cuando el usuario haga scroll
-    const timelineItems = document.querySelectorAll('.timeline-item');
-
-    function checkVisibility() {
-      timelineItems.forEach(item => {
-        const rect = item.getBoundingClientRect();
-        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-          item.classList.add('visible');
-        }
-      });
-    }
-
-    // Llamar a la función al hacer scroll
-    window.addEventListener('scroll', checkVisibility);
-
-    // Llamar a la función al cargar la página
-    checkVisibility();
-  </script>
 
 </body>
 </html>
