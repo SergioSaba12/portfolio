@@ -1,0 +1,411 @@
+/* index.css - Apple-Style Premium Design System */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Base Colors - Apple Light Theme */
+  --bg: #FFFFFF;
+  --bg-secondary: #F5F5F7;
+  --bg-tertiary: #FBFBFD;
+  --card: #FFFFFF;
+  --ink: #1D1D1F;
+  --muted: #6E6E73;
+  --border: #D2D2D7;
+
+  /* Accent - Apple Blue */
+  --accent: #0071E3;
+  --accent-hover: #0077ED;
+  --accent-light: #E8F4FD;
+
+  /* Subtle Premium Gradients */
+  --gradient-premium: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-blue: linear-gradient(135deg, #0071E3 0%, #00a8e8 100%);
+
+  /* Enhanced Shadows - More Depth */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 8px 16px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.10);
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-card-hover: 0 12px 24px rgba(0, 0, 0, 0.10);
+  --shadow-premium: 0 8px 32px rgba(102, 126, 234, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Enhanced Typography - More Impact */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+/* Premium Card Style */
+.card-apple {
+  background: var(--card);
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+}
+
+.card-apple:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
+  border-color: #C9C9CE;
+}
+
+/* Premium Gradient Card */
+.card-premium {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+  box-shadow: var(--shadow-premium);
+}
+
+.card-premium:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(102, 126, 234, 0.25);
+}
+
+/* Enhanced Buttons */
+.btn-apple {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 980px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.17648;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.btn-apple-primary {
+  background: var(--accent);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.2);
+}
+
+.btn-apple-primary:hover {
+  background: var(--accent-hover);
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 113, 227, 0.3);
+}
+
+.btn-apple-secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
+}
+
+.btn-apple-secondary:hover {
+  background: var(--accent-light);
+  border-color: var(--accent-hover);
+}
+
+/* Premium Pill Tags */
+.pill-apple {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 14px;
+  background: var(--bg-secondary);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  letter-spacing: -0.01em;
+}
+
+.pill-apple:hover {
+  background: #E8E8ED;
+  transform: scale(1.05);
+}
+
+/* Premium Link Hover */
+.link-apple {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.link-apple::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.link-apple:hover::after {
+  width: 100%;
+}
+
+.link-apple:hover {
+  color: var(--accent-hover);
+}
+
+/* Enhanced Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Premium Image Hover Effect */
+.img-apple {
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.img-apple:hover {
+  transform: scale(1.05);
+}
+
+/* Section Spacing - More Generous */
+.section-apple {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+  .section-apple {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-apple {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+}
+
+/* Enhanced Typography Scale */
+.text-hero {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 768px) {
+  .text-hero {
+    font-size: 72px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-hero {
+    font-size: 80px;
+  }
+}
+
+.text-title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 768px) {
+  .text-title {
+    font-size: 52px;
+  }
+}
+
+.text-subtitle {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.42;
+  letter-spacing: 0.007em;
+  color: var(--muted);
+}
+
+@media (min-width: 768px) {
+  .text-subtitle {
+    font-size: 24px;
+    line-height: 1.38;
+  }
+}
+
+.text-body {
+  font-size: 17px;
+  line-height: 1.52;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+}
+
+.text-small {
+  font-size: 14px;
+  line-height: 1.45;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+/* Eyebrow Text - Enhanced */
+.eyebrow {
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Clean Separator */
+.separator-apple {
+  height: 1px;
+  background: var(--border);
+  border: none;
+  margin: 0;
+}
+
+/* Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C7C7CC;
+  border-radius: 10px;
+  border: 2px solid var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #AEAEB2;
+}
+
+/* Enhanced Focus States */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Premium Selection */
+::selection {
+  background: var(--accent-light);
+  color: var(--ink);
+}
+
+/* Grid System */
+.container-apple {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 1024px) {
+  .container-apple {
+    max-width: 1280px;
+  }
+}
+
+/* Navigation Shadow - Premium */
+.nav-shadow {
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(20px);
+}
+
+/* Premium Hover Scale */
+.hover-scale {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+/* Premium Badge */
+.badge-premium {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

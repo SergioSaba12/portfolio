@@ -1,0 +1,14 @@
+/* App.css */
+/* ✅ Limpio total: quita el “centrado Vite” y el text-align: center
+   Esto evita que tu web parezca un “demo de template”. */
+
+#root{
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Opcional: mejora rendering tipográfico */
+*{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
