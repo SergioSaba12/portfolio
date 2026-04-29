@@ -1,13 +1,667 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sergio-portfolio</title>
+    <title>Sergio Sabater Ruiz | Full-Stack &amp; AI Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Sergio Sabater Ruiz, a Full-Stack & AI Engineer focused on voice AI, automation, accessibility-first UX, and production-grade AI prototypes."
+    />
+    <meta name="author" content="Sergio Sabater Ruiz" />
+    <meta name="theme-color" content="#f5f5f7" />
+    <meta property="og:title" content="Sergio Sabater Ruiz | Full-Stack & AI Engineer" />
+    <meta
+      property="og:description"
+      content="Voice AI, automation, accessibility-first UX, and applied machine learning products built end to end."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Sergio Sabater Ruiz home">
+          <span class="brand-mark">SS</span>
+          <span class="brand-text">
+            <strong>Sergio Sabater</strong>
+            <small>Full-Stack &amp; AI Engineer</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#awards">Awards</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="header-action" href="./assets/SergioSabater.pdf" download>Download CV</a>
+      </header>
+
+      <main id="top">
+        <section class="hero section-frame">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">Valencia, Spain · Open to remote globally</p>
+            <h1>Full-Stack &amp; AI Engineer building voice AI products.</h1>
+            <p class="hero-lead">
+              I turn early-stage ideas into working AI products: backend APIs, LLM workflows,
+              voice/text interfaces, accessibility-first UX, and full-stack demos that make the
+              technical story easy to understand.
+            </p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button button-primary" href="mailto:sabaterruizs@gmail.com">Contact me</a>
+              <a class="button button-secondary" href="./assets/SergioSabater.pdf" download>
+                Download CV
+              </a>
+            </div>
+            <div class="social-links" aria-label="Professional profiles">
+              <a href="https://github.com/sergiosaba12" target="_blank" rel="noreferrer">GitHub</a>
+              <a
+                href="https://www.linkedin.com/in/sergio-sabater-ruiz-562753268"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a href="mailto:sabaterruizs@gmail.com">sabaterruizs@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" data-reveal data-delay="120" aria-label="Professional engineering snapshot">
+            <div class="visual-toolbar">
+              <span class="status-dot"></span>
+              <span>Available for remote roles</span>
+            </div>
+            <div class="hero-dashboard">
+              <div class="dashboard-lead">
+                <span>Current focus</span>
+                <strong>Full-stack AI products that move from prototype to demo-ready systems.</strong>
+                <p>
+                  I combine backend APIs, LLM workflows, product UI, accessibility thinking, and
+                  startup validation into clear working software.
+                </p>
+              </div>
+              <div class="dashboard-metrics" aria-label="Portfolio metrics">
+                <div>
+                  <span>Projects</span>
+                  <strong>11</strong>
+                  <small>AI, security, health and UX</small>
+                </div>
+                <div>
+                  <span>Recognition</span>
+                  <strong>6</strong>
+                  <small>Awards, datathons and programs</small>
+                </div>
+              </div>
+            </div>
+            <div class="snapshot-tags" aria-label="Core strengths">
+              <span>Backend APIs</span>
+              <span>LLM workflows</span>
+              <span>React/TypeScript</span>
+              <span>Accessible UX</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="signal-strip section-frame" aria-label="Profile highlights">
+          <div data-reveal>
+            <span>Portfolio depth</span>
+            <strong>11 projects · AI, security, health, UX and automation</strong>
+          </div>
+          <div data-reveal data-delay="80">
+            <span>Validated by</span>
+            <strong>Datathons · startup ecosystems · corporate challenges</strong>
+          </div>
+          <div data-reveal data-delay="160">
+            <span>Strength</span>
+            <strong>Python/FastAPI · React/TypeScript · ML systems</strong>
+          </div>
+        </section>
+
+        <section class="logo-rail section-frame" aria-label="Organizations and programs">
+          <p class="rail-label">Trusted, selected or validated across</p>
+          <div class="logo-viewport">
+            <div class="logo-track" aria-hidden="true">
+              <img src="./assets/portfolio/logos/uv.png" alt="" />
+              <img src="./assets/portfolio/logos/upv.png" alt="" />
+              <img src="./assets/portfolio/logos/mapfre.png" alt="" />
+              <img src="./assets/portfolio/logos/dedalus.png" alt="" />
+              <img src="./assets/portfolio/logos/naturgy.png" alt="" />
+              <img src="./assets/portfolio/logos/startup-valencia.png" alt="" />
+              <img src="./assets/portfolio/logos/samsung.png" alt="" />
+              <img src="./assets/portfolio/logos/health2innovation.png" alt="" />
+              <img src="./assets/portfolio/logos/iatec-uv.png" alt="" />
+              <img src="./assets/portfolio/logos/vds.png" alt="" />
+              <img src="./assets/portfolio/logos/uv.png" alt="" />
+              <img src="./assets/portfolio/logos/upv.png" alt="" />
+              <img src="./assets/portfolio/logos/mapfre.png" alt="" />
+              <img src="./assets/portfolio/logos/dedalus.png" alt="" />
+              <img src="./assets/portfolio/logos/naturgy.png" alt="" />
+              <img src="./assets/portfolio/logos/startup-valencia.png" alt="" />
+              <img src="./assets/portfolio/logos/samsung.png" alt="" />
+              <img src="./assets/portfolio/logos/health2innovation.png" alt="" />
+              <img src="./assets/portfolio/logos/iatec-uv.png" alt="" />
+              <img src="./assets/portfolio/logos/vds.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-frame" id="work">
+          <div class="carousel-heading" data-reveal>
+            <div class="section-heading">
+              <p class="eyebrow">Project carousel</p>
+              <h2>Applied AI projects with product, backend, and interface thinking.</h2>
+            </div>
+            <div class="carousel-controls" aria-label="Project carousel controls">
+              <button class="carousel-button" type="button" data-carousel-prev="projects" aria-label="Previous project">
+                ‹
+              </button>
+              <button class="carousel-button" type="button" data-carousel-next="projects" aria-label="Next project">
+                ›
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel-viewport" data-reveal>
+            <div class="carousel-track project-carousel" data-carousel="projects" tabindex="0">
+              <article class="project-card project-card-featured carousel-card">
+                <div class="project-media">
+                  <img src="./assets/portfolio/logos/aintegra.png" alt="AIntegra logo" />
+                </div>
+                <div class="card-topline">
+                  <span>CATY</span>
+                  <span>Voice AI · Automation</span>
+                </div>
+                <h3>AI Voice Assistant &amp; Automation System</h3>
+                <p>
+                  Voice/text assistant prototype for contextual task execution, summarization, app
+                  navigation, local-first LLM exploration, and accessibility support.
+                </p>
+                <div class="tag-row">
+                  <span>Python</span>
+                  <span>FastAPI</span>
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>Ollama</span>
+                </div>
+              </article>
+
+              <article class="project-card carousel-card">
+                <div class="project-media">
+                  <img src="./assets/portfolio/logos/aintegra.png" alt="AIntegra logo" />
+                </div>
+                <div class="card-topline">
+                  <span>AIntegra Limited</span>
+                  <span>Startup · Accessibility AI</span>
+                </div>
+                <h3>AI Voice &amp; Accessibility Startup</h3>
+                <p>
+                  Co-founded an accessibility-driven AI venture building hands-free human-computer
+                  interaction, natural voice assistants, and inclusive automation prototypes.
+                </p>
+                <div class="tag-row">
+                  <span>Python</span>
+                  <span>PyTorch</span>
+                  <span>NLP</span>
+                  <span>Speech</span>
+                  <span>Product Design</span>
+                </div>
+              </article>
+
+              <article class="project-card carousel-card">
+                <div class="project-media">
+                  <img src="./assets/portfolio/logos/sentinelax.png" alt="Sentinel AX logo" />
+                </div>
+                <div class="card-topline">
+                  <span>Sentinel AX</span>
+                  <span>Cybersecurity · Full-stack AI</span>
+                </div>
+                <h3>Multiplatform Cybersecurity Suite</h3>
+                <p>
+                  Platform combining Angular, Spring Boot, FastAPI microservices and ML/DL models
+                  for malicious URLs, spam, NLP guidance, image deepfakes and voice deepfakes.
+                </p>
+                <div class="tag-row">
+                  <span>FastAPI</span>
+                  <span>Angular</span>
+                  <span>Spring Boot</span>
+                  <span>Cassandra</span>
+                  <span>TensorFlow</span>
+                </div>
+                <a class="project-link" href="https://sergiosaba12.github.io/Sentinel-AX/" target="_blank" rel="noreferrer">
+                  Live demo
+                </a>
+              </article>
+
+              <article class="project-card carousel-card">
+                <div class="project-media">
+                  <img src="./assets/portfolio/logos/aintegra-health.png" alt="AIntegra Health logo" />
+                </div>
+                <div class="card-topline">
+                  <span>AIntegra Health</span>
+                  <span>Healthcare · Award-winning</span>
+                </div>
+                <h3>Healthcare AI for Dedalus Datathon</h3>
+                <p>
+                  Machine learning solution built with real healthcare datasets to address clinical
+                  and operational challenges in a jury-evaluated datathon environment.
+                </p>
+                <div class="tag-row">
+                  <span>Python</span>
+                  <span>Machine Learning</span>
+                  <span>Healthcare Data</span>
+                  <span>Validation</span>
+                </div>
+              </article>
+
+              <article class="project-card carousel-card">
+                <div class="project-media project-media-text">F1</div>
+                <div class="card-topline">
+                  <span>Formula 1 Strategy Simulator</span>
+                  <span>Thesis · AI Simulation</span>
+                </div>
+                <h3>Race Strategy Prediction System</h3>
+                <p>
+                  AI simulator for pit-stop timing and strategy outcomes using tire degradation,
+                  lap evolution, race conditions, model inference and uncertainty-aware insights.
+                </p>
+                <div class="tag-row">
+                  <span>Python</span>
+                  <span>scikit-learn</span>
+                  <span>pandas</span>
+                  <span>Simulation</span>
+                  <span>Optimization</span>
+                </div>
+              </article>
+
+              <article class="project-card carousel-card">
+                <div class="project-media">
+                  <img src="./assets/portfolio/logos/mapfre-qr.png" alt="MAPFRE QR Connect logo" />
+                </div>
+                <div class="card-topline">
+                  <span>MAPFRE QR Connect</span>
+                  <span>Industry · Innovation</span>
+                </div>
+                <h3>AI-Enabled Insurance Interaction</h3>
+                <p>
+                  Concept connecting QR-based service access with intelligent data processing and
+                  automation to make customer interactions faster and more contextual.
+                </p>
+                <div class="tag-row">
+                  <span>Python</span>
+                  <span>ML</span>
+                  <span>Data Processing</span>
+                  <span>Integration</span>
+                </div>
+              </article>
+
+              <article class="project-card carousel-card">
+                <div class="project-media">
+                  <img src="./assets/portfolio/logos/naturgy-ai.png" alt="Naturgy AI logo" />
+                </div>
+                <div class="card-topline">
+                  <span>Naturgy AI</span>
+                  <span>UX · Product · AI</span>
+                </div>
+                <h3>Mobile App Usability Improvement</h3>
+                <p>
+                  AI-assisted UX layer for intent-based help, smarter onboarding, contextual
+                  suggestions, and fewer steps in critical mobile customer journeys.
+                </p>
+                <div class="tag-row">
+                  <span>UX</span>
+                  <span>Mobile</span>
+                  <span>AI Assistant</span>
+                  <span>Journey Mapping</span>
+                </div>
+              </article>
+
+              <article class="project-card carousel-card">
+                <div class="project-media">
+                  <img src="./assets/portfolio/logos/olivia-mareque.png" alt="Olivia Mareque logo" />
+                </div>
+                <div class="card-topline">
+                  <span>Olivia Mareque</span>
+                  <span>Growth · Marketing Strategy</span>
+                </div>
+                <h3>Growth Strategy to 100K Followers</h3>
+                <p>
+                  Full-funnel growth system with positioning, content pillars, weekly cadence,
+                  KPI tracking, A/B testing, format experiments, and distribution loops.
+                </p>
+                <div class="tag-row">
+                  <span>Growth</span>
+                  <span>Analytics</span>
+                  <span>A/B Testing</span>
+                  <span>Brand Positioning</span>
+                </div>
+              </article>
+
+              <article class="project-card carousel-card">
+                <div class="project-media project-media-text">iOS</div>
+                <div class="card-topline">
+                  <span>Accessible Tourist Routes</span>
+                  <span>Inclusive UX · iOS</span>
+                </div>
+                <h3>GPS-Based Accessible Route Concept</h3>
+                <p>
+                  iOS product concept for accessible tourist routes with GPS-based awareness,
+                  real-time narration, text alternatives and native-feeling route discovery.
+                </p>
+                <div class="tag-row">
+                  <span>Swift</span>
+                  <span>iOS</span>
+                  <span>GPS</span>
+                  <span>Accessibility</span>
+                </div>
+              </article>
+
+              <article class="project-card carousel-card">
+                <div class="project-media">
+                  <img src="./assets/portfolio/logos/goldsense.png" alt="GoldSense logo" />
+                </div>
+                <div class="card-topline">
+                  <span>GoldSense</span>
+                  <span>AI product · In progress</span>
+                </div>
+                <h3>Decision-Support AI Product</h3>
+                <p>
+                  In-progress AI product focused on intelligent analysis and decision support,
+                  currently being refined from prototype concept toward a clearer product surface.
+                </p>
+                <div class="tag-row">
+                  <span>Python</span>
+                  <span>AI/ML</span>
+                  <span>Product Design</span>
+                </div>
+              </article>
+
+              <article class="project-card carousel-card">
+                <div class="project-media">
+                  <img src="./assets/portfolio/logos/vietufusion.png" alt="VietuFusion logo" />
+                </div>
+                <div class="card-topline">
+                  <span>VietuFusion</span>
+                  <span>AI product · In progress</span>
+                </div>
+                <h3>Data Fusion AI Concept</h3>
+                <p>
+                  Active AI product exploration around data fusion and intelligent processing,
+                  designed to turn fragmented signals into more usable decision context.
+                </p>
+                <div class="tag-row">
+                  <span>Python</span>
+                  <span>AI/ML</span>
+                  <span>Data Fusion</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-frame experience-section" id="experience">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Experience</p>
+            <h2>Startup execution, AI product building, and enterprise systems exposure.</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item" data-reveal>
+              <div class="timeline-date">2023 · Present</div>
+              <div>
+                <h3>Co-Founder &amp; CTO / AI Product Engineer · AIntegra Limited</h3>
+                <p>
+                  Lead software and AI product development for accessibility, automation, and
+                  inclusive human-computer interaction. Built assistants, backend services, and
+                  full-stack prototypes for hackathons, startup programs, and product validation.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item" data-reveal data-delay="90">
+              <div class="timeline-date">Feb 2026 · Apr 2026</div>
+              <div>
+                <h3>System Architect Intern · Capgemini</h3>
+                <p>
+                  Trained in Pega Platform and enterprise system architecture, gaining exposure to
+                  process automation, low-code delivery, documentation, and business workflow
+                  analysis in a consulting environment.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item" data-reveal data-delay="180">
+              <div class="timeline-date">2021 · 2026</div>
+              <div>
+                <h3>B.S. in Telematics Engineering · University of Valencia</h3>
+                <p>
+                  Built a technical foundation across networks, software, AI, probability, and
+                  systems. Completed additional AI education through Samsung Innovation Campus at
+                  Universitat Politecnica de Valencia.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-frame" id="skills">
+          <div class="section-heading compact" data-reveal>
+            <p class="eyebrow">Skills</p>
+            <h2>Technical range for taking AI products from prototype to demo-ready systems.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card" data-reveal>
+              <h3>Programming &amp; Backend</h3>
+              <p>Python, JavaScript, TypeScript, SQL, Java, C++, FastAPI, REST APIs, JWT auth</p>
+            </article>
+            <article class="skill-card" data-reveal data-delay="60">
+              <h3>Frontend &amp; Product</h3>
+              <p>React, TypeScript, Tailwind CSS, Swift, responsive UI, product prototyping</p>
+            </article>
+            <article class="skill-card" data-reveal data-delay="120">
+              <h3>AI &amp; Machine Learning</h3>
+              <p>TensorFlow, PyTorch, scikit-learn, Keras, Hugging Face, NLP, Computer Vision</p>
+            </article>
+            <article class="skill-card" data-reveal data-delay="180">
+              <h3>Data &amp; Infrastructure</h3>
+              <p>PostgreSQL, Supabase, Git, Docker, Railway, Google Colab, API integrations</p>
+            </article>
+            <article class="skill-card" data-reveal data-delay="240">
+              <h3>Systems &amp; Security</h3>
+              <p>System design basics, deployment, storage, authentication, model evaluation</p>
+            </article>
+            <article class="skill-card" data-reveal data-delay="300">
+              <h3>Product Strengths</h3>
+              <p>Voice/text interfaces, accessibility-first UX, LLM workflows, startup demos</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-frame awards-section" id="awards">
+          <div class="carousel-heading" data-reveal>
+            <div class="section-heading">
+              <p class="eyebrow">Recognition carousel</p>
+              <h2>Recognized across AI, entrepreneurship, datathons, and startup ecosystems.</h2>
+            </div>
+            <div class="carousel-controls" aria-label="Recognition carousel controls">
+              <button class="carousel-button" type="button" data-carousel-prev="awards" aria-label="Previous recognition">
+                ‹
+              </button>
+              <button class="carousel-button" type="button" data-carousel-next="awards" aria-label="Next recognition">
+                ›
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel-viewport" data-reveal>
+            <div class="carousel-track recognition-carousel" data-carousel="awards" tabindex="0">
+              <article class="recognition-card">
+                <img src="./assets/portfolio/awards/dedalus-win.jpg" alt="Dedalus Datathon award moment" />
+                <span>First Prize · 2025</span>
+                <strong>Dedalus Datathon</strong>
+                <p>AI solution using real healthcare data in a 48-hour challenge.</p>
+              </article>
+              <article class="recognition-card">
+                <img src="./assets/portfolio/awards/gennera-uv-mapfre.jpg" alt="Gennera UV-MAPFRE winners" />
+                <span>First Prize · 2025</span>
+                <strong>Gennera UV-MAPFRE</strong>
+                <p>AI-based solution addressing real business challenges.</p>
+              </article>
+              <article class="recognition-card">
+                <img src="./assets/portfolio/awards/etse.jpg" alt="ETSE-UV project recognition" />
+                <span>Best Project · 2025</span>
+                <strong>ETSE-UV · Xarxa UVempren</strong>
+                <p>Recognized for innovation and viability at the School of Engineering.</p>
+              </article>
+              <article class="recognition-card">
+                <img src="./assets/portfolio/awards/sweden.jpg" alt="Innovation Bootcamp Sweden" />
+                <span>International · 2025</span>
+                <strong>Innovation Bootcamp · Sweden</strong>
+                <p>Selected to represent University of Valencia in an international program.</p>
+              </article>
+              <article class="recognition-card">
+                <img src="./assets/portfolio/awards/vds2025.jpg" alt="Valencia Digital Summit 2025" />
+                <span>Selected Startup · 2025</span>
+                <strong>VDS · Startup Valencia</strong>
+                <p>AIntegra selected to exhibit at Valencia Digital Summit with UV support.</p>
+              </article>
+              <article class="recognition-card">
+                <img src="./assets/portfolio/awards/gennera-5ucv.jpeg" alt="Gennera 5UCV winners" />
+                <span>First Prize · 2025</span>
+                <strong>Gennera 5UCV</strong>
+                <p>Winning interuniversity entrepreneurship team representing University of Valencia.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-frame gallery-section" id="ecosystem">
+          <div class="carousel-heading" data-reveal>
+            <div class="section-heading">
+              <p class="eyebrow">Ecosystem carousel</p>
+              <h2>Moments from bootcamps, showcases, datathons, and startup validation.</h2>
+            </div>
+            <div class="carousel-controls" aria-label="Gallery carousel controls">
+              <button class="carousel-button" type="button" data-carousel-prev="gallery" aria-label="Previous gallery image">
+                ‹
+              </button>
+              <button class="carousel-button" type="button" data-carousel-next="gallery" aria-label="Next gallery image">
+                ›
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel-viewport" data-reveal>
+            <div class="carousel-track gallery-carousel" data-carousel="gallery" tabindex="0">
+              <figure class="gallery-card" style="--gallery-bg: url('./assets/portfolio/gallery/startup-valencia-2025.jpeg')">
+                <img src="./assets/portfolio/gallery/startup-valencia-2025.jpeg" alt="Startup Valencia event moment" />
+              </figure>
+              <figure class="gallery-card" style="--gallery-bg: url('./assets/portfolio/gallery/cybersecurity-demo-day.jpeg')">
+                <img src="./assets/portfolio/gallery/cybersecurity-demo-day.jpeg" alt="Cybersecurity Startup Program Demo Day group photo" />
+              </figure>
+              <figure class="gallery-card" style="--gallery-bg: url('./assets/portfolio/gallery/gallery-02.jpg')">
+                <img src="./assets/portfolio/gallery/gallery-02.jpg" alt="Innovation event presentation moment" />
+              </figure>
+              <figure class="gallery-card" style="--gallery-bg: url('./assets/portfolio/gallery/gallery-05.jpg')">
+                <img src="./assets/portfolio/gallery/gallery-05.jpg" alt="Startup showcase and networking moment" />
+              </figure>
+              <figure class="gallery-card" style="--gallery-bg: url('./assets/portfolio/gallery/gallery-06.jpg')">
+                <img src="./assets/portfolio/gallery/gallery-06.jpg" alt="International innovation program moment" />
+              </figure>
+              <figure class="gallery-card" style="--gallery-bg: url('./assets/portfolio/gallery/gallery-09.jpg')">
+                <img src="./assets/portfolio/gallery/gallery-09.jpg" alt="Startup community event moment" />
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact section-frame" id="contact">
+          <div class="contact-copy" data-reveal>
+            <p class="eyebrow">Contact</p>
+            <h2>Available for full-stack AI, voice AI, automation, and product engineering roles.</h2>
+            <p>
+              I am based in Valencia, Spain and open to remote opportunities globally. Send a note
+              and I will get it directly in my inbox.
+            </p>
+          </div>
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/sabaterruizs@gmail.com"
+            method="POST"
+            data-reveal
+            data-delay="120"
+          >
+            <input type="hidden" name="_subject" value="New portfolio contact for Sergio Sabater" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://sergiosaba12.github.io/portfolio/thank-you.html" />
+            <input type="hidden" name="_url" value="https://sergiosaba12.github.io/portfolio/#contact" />
+            <input
+              type="hidden"
+              name="_autoresponse"
+              value="Thanks for reaching out. I have received your message and will reply as soon as possible. — Sergio Sabater"
+            />
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="form-field">
+              <label for="contact-name">Name</label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-field">
+              <label for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="form-field form-field-full">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button class="button button-primary form-submit" type="submit">Send message</button>
+
+            <div class="contact-actions contact-links" aria-label="Alternative contact links">
+              <a class="button button-secondary" href="mailto:sabaterruizs@gmail.com">Email</a>
+              <a
+                class="button button-secondary"
+                href="https://www.linkedin.com/in/sergio-sabater-ruiz-562753268"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/sergiosaba12"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+              <a class="button button-outline" href="./assets/SergioSabater.pdf" download>CV</a>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>Sergio Sabater Ruiz</span>
+        <span>Full-Stack &amp; AI Engineer · Voice AI · Automation</span>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
